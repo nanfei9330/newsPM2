@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>操作成功</title>
+    <!--Bootstrap-->
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <div class="container" style="margin-top:100px">
+        <div class="jumbotron">
+            <h2><%=say%></h2>
+            <p class="lead">将在<span id="second">3</span> s后自动返回</p>
+            <p><a class="btn btn-lg btn-success" href="/admin/" role="button">直接点击返回</a></p>
+        </div>
+    </div>
+    <script>
+    var i = 2;
+    var intervalid;
+    intervalid = setInterval("change()", 1000);
+
+    function change() {
+        if (i == 0) {
+            window.location.href = "/admin/";
+            clearInterval(intervalid);
+        }
+        document.getElementById("second").innerHTML = i;
+        i--;
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            百度新闻管理登录
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Bootstrap -->
+        <link href="/public/stylesheets/bootstrap.min.css" rel="stylesheet" media="screen" type="text/css"><!--mystyle-->
+        <link rel="stylesheet" href="/public/stylesheets/mystyle.css" type="text/css">
+    </head>
+    <body class="loginpage">
+        <div class="signin-content">
+            <div class="login-box">
+                <h1>
+                    admin panel
+                </h1>
+                <div class="loginmsg"></div>
+                <form action="/admin/" method="post" name="form" onSubmit="return ck()">
+                    <!--用户名-->
+                    <div class="username">
+                        <div class="usernameinner">
+                            <input type="text" placeholder="username" name="username" id="username" value="admin">
+                        </div>
+                    </div><!--密码-->
+                    <div class="password">
+                        <div class="passwordinner">
+                            <input type="text" name="password" id="password" placeholder="password" value="admin">
+                        </div>
+                    </div><!--登录按钮-->
+                    <input type="submit" value="登 录" class="btn btn-primary submit">
+                </form>
+            </div>
+        </div>
+        <div class="container text-center">
+            新闻v1.0.3 Copyright © 2015
+        </div><script src="/javascripts/jquery.js" type="text/javascript">
+</script><script src="/javascripts/bootstrap.min.js" type="text/javascript">
+</script><script type="text/javascript" src="/javascripts/adminjs/login.js">
+</script>
+    </body>
+</html>
