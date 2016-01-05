@@ -1,0 +1,185 @@
+body {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+    ;
+}
+
+#footer {
+    width: 100%;
+    position: fixed;
+    height: 40px;
+    line-height: 40px;
+    ;
+    bottom: 0;
+    padding: 0 15px;
+    clear: both;
+    z-index: 1000;
+}
+
+.sidebar {
+    background-color: #ddd;
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+}
+
+#buttons {
+    margin-bottom: 10px;
+}
+
+#table-page {
+    margin: 0;
+}
+
+#table-page ul {
+    margin: 0;
+}
+
+.sidebar ul li a {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/**************LOGIN***************/
+
+
+/*login body*/
+
+.loginpage {
+    background: #E8E9EE;
+}
+
+.signin-content {
+    max-width: 360px;
+    margin: 7% auto 20px;
+    background: #373b3e;
+    border-radius: 5px;
+}
+
+.signin-content h1 {
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+    border-bottom: 1px solid #337AB7;
+}
+
+.signin-content form {
+    padding: 15px;
+}
+
+
+/*用户名*/
+
+.signin-content .username,
+.signin-content .password {
+    background: #EEE;
+}
+
+.signin-content .login-box .glyphicon {
+    float: left;
+    display: block;
+    height: 50px;
+    width: 44px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.signin-content .login-box .usernameinner,
+.login-box .passwordinner {
+    margin-left: 45px;
+    border-left: 1px solid #ddd;
+    background: #fff;
+    border-left: 1px solid #ddd;
+    margin-bottom: 20px;
+    ;
+}
+
+
+/*文本框*/
+
+.signin-content .login-box .usernameinner input,
+.login-box .passwordinner input {
+    outline: none;
+    padding: 15px 10px;
+    width: 100%;
+    border: 0;
+}
+
+
+/*提交按钮*/
+
+.signin-content .submit {
+    width: 100%;
+    height: 40px;
+}
+
+.loginmsg {
+    height: 30px;
+    background: #fffccc;
+    margin: 15px 15px 0 15px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    display: none;
+}
+
+
+/*页码*/
+
+.tcdPageCode {
+    padding: 15px 20px;
+    text-align: left;
+    color: #ccc;
+    text-align: center;
+}
+
+.tcdPageCode a {
+    display: inline-block;
+    color: #428bca;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    margin: 0 2px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.tcdPageCode a:hover {
+    text-decoration: none;
+    border: 1px solid #428bca;
+}
+
+.tcdPageCode span.current {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    margin: 0 2px;
+    color: #fff;
+    background-color: #428bca;
+    border: 1px solid #428bca;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.tcdPageCode span.disabled {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    margin: 0 2px;
+    color: #bfbfbf;
+    background: #f2f2f2;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    vertical-align: middle;
+}

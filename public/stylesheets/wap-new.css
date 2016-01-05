@@ -1,0 +1,241 @@
+html{font-size:62.5%;} 
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*head*/
+
+.header {
+    min-width: 320px;
+    padding: 0 10px;
+    background: #3e98f0;
+}
+
+.ui-new-toolbar {
+    width: 100%;
+    height: 44px;
+    background: url(../images/bg-news-logo_344ce44.png) center center no-repeat;
+    background-size: 77px auto;
+    -webkit-background-size: 77px auto;
+    border-bottom: 1px solid #5dabf0;
+}
+
+.ui-new-toolbar .ui-new-toolbar-l {
+    float: left;
+    margin-top: 5px;
+}
+
+.ui-new-toolbar a {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    background: url(../images/bg-new-toolbar_6e9bc53.png) no-repeat;
+    background-size: 40px 500px;
+    font-size: 15px;
+    line-height: 44px;
+}
+
+.ui-new-toolbar .ui-new-toolbar-l a.btn-config {
+    background-position: 0 0;
+}
+
+.ui-new-toolbar .ui-new-toolbar-l a.btn-userhome {
+    background-position: center -467px;
+}
+
+.ui-new-toolbar .ui-new-toolbar-r a.btn-search {
+    background-position: center -162px;
+}
+
+.ui-new-toolbar .ui-new-toolbar-r a.btn-subscribe {
+    background-position: center -107px;
+}
+
+.ui-new-toolbar .ui-new-toolbar-r {
+    float: right;
+}
+
+
+/*nav*/
+
+.header .navigator {
+    overflow: hidden;
+}
+
+.header .navigator li a.on {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navigator ul{display: flex;height: 32px;}
+.navigator ul li{flex:1;-webkit-flex:1;height: 100%;line-height: 32px;text-align: center; }
+.navigator ul li a{ color: #fff;font-size: 14px;outline: none;}
+/********main*********/
+
+
+/*slide*/
+
+.content .gallery {
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.content .gallery .g-list {
+    width: 100%;
+}
+
+.content .gallery .g-list img {
+    width: 100%;
+    height: inherit;
+    min-height: 187px;
+    max-height: 287px;
+}
+
+
+/*new list*/
+
+.content .list-item {
+    padding-left: 10px;
+}
+
+.content .list-item li {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+
+/*new img*/
+
+.content .list-item li .item-pic {
+    float: left;
+    height: 68px;
+    width: 95px;
+    border: 1px solid #e8e8e8;
+    background-color: #F4F7F9;
+    margin-right: 10px;
+}
+
+.content .list-item li .item-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*new des*/
+
+.content .list-item li .item-con .main-title a {
+    font-size: 16px;
+    line-height: 20px;
+    color: #262b31;
+}
+
+.content .list-item li .item-con .main-abs {
+    font-size: 13px;
+    line-height: 20px;
+    color: #b8bac0;
+    font-weight: 400;
+    margin: 3px 0 10px;
+}
+
+.content .list-item li .item-con .list-bottom {
+    font-size: 13px;
+    line-height: 20px;
+    color: #b8bac0;
+    font-weight: 400;
+}
+
+
+/*more*/
+
+.refresh-wrapper .refresh {
+    height: 36px;
+    line-height: 36px;
+    background: #f8f9fa;
+    border: 1px solid #ebedef;
+    border-radius: 1px;
+    color: #545454;
+    margin: 14px 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/*footer*/
+
+.ui-footer {
+    background: #239bf0;
+    height: 44px;
+    overflow: hidden;
+    line-height: 22px;
+}
+
+.ui-footer a {
+    float: left;
+    width: 33%;
+    height: 21px;
+    overflow: hidden;
+    margin-top: 12px;
+    text-align: center;
+    color: #fff;
+    border-right: 1px solid #4fadf0;
+}
+
+.ui-footer a span.ico {
+    width: 25px;
+    height: 100%;
+    display: inline-block;
+    background: url(../images/bg-footer_7e7ec6c.png) no-repeat;
+    background-size: 30px 300px;
+    -webkit-background-size: 30px 300px;
+    vertical-align: middle;
+}
+
+.ui-footer a:nth-child(3) {
+    border: none;
+}
+
+.ui-footer a.feedback span {
+    background-position: 0 3px;
+}
+
+.ui-footer a.app-recommend span {
+    background-position: 0 -31px;
+}
+
+.ui-footer a.app-download span {
+    background-position: 0 -64px;
+}
+
+.load{width:100%;height: 84px;text-align: center;margin: 50px 0;}
+/*media*/
+
+@media only screen and (max-width: 600px) {
+    .list-item .main-abs {
+        display: none;
+    }
+}
