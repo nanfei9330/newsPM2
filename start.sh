@@ -8,8 +8,8 @@ maxCpuRate=70
 
 while [ true ]
 do
-#获取进程pid
-pid=`ps -e|grep '[0-9].node./'|awk '{print $1}'`
+	#获取进程pid
+	pid=`ps -e|grep '[0-9].node./'|awk '{print $1}'`
 	#判断nodejs进程是否存在
 	if [ ! $pid ]
 	then
@@ -18,7 +18,7 @@ pid=`ps -e|grep '[0-9].node./'|awk '{print $1}'`
 	fi
 	#cpu占用率
 	cpuRate=`ps -p $pid -o pcpu|grep -v CPU|cut -d . -f 1|awk '{print $1}'`
-	
+	echo "cpu="$cpuRate
 	#如果占用率超过70%，则重启nodejs服务
 	if [ "$cpuRate" -gt "$maxCpuRate" ]
 	then
