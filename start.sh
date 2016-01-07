@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "service start..."
 
-pm2 start ./bin/news
+pm2 start ./bin/www
 
 #设定最大cpu占用率
 maxCpuRate=70
