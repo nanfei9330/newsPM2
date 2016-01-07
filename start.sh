@@ -9,7 +9,7 @@ maxCpuRate=70
 while [ true ]
 do
 	#获取进程pid
-	pid=`ps -ef|grep -v grep|grep 'newsPM2/bin'|awk 'NR==1{print $2}'`
+	pid=`ps -ef|grep -v grep|grep 'newsPM2/bin'|awk '{print $2}'`
 	echo "newsPID="$pid
 	#判断nodejs进程是否存在
 	if [ ! $pid ]
