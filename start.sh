@@ -9,7 +9,7 @@ maxCpuRate=70
 while [ true ]
 do
 	#获取进程pid
-	pid=`ps -ef|grep -v grep|grep 'newsPM2/bin'|awk '{print $2}'`
+	pid=`ps -e|grep '[0-9].node./'|awk '{print $1}'`
 	echo "newsPID="$pid
 	#判断nodejs进程是否存在
 	if [ ! $pid ]
@@ -18,7 +18,8 @@ do
 		break
 	fi
 	#cpu占用率
-	cpuRate=`ps -p $pid -o pcpu|grep -v CPU|cut -d . -f 1|awk '{print $1}'`
+	#cpuRate=`ps -p $pid -o pcpu|grep -v CPU|cut -d . -f 1|awk '{print $1}'`
+	cpuRate=$(pm2 prettylist |grep memory |cut -d : -f 4 |cut -d '}' -f 1)
 	echo "cpu="$cpuRate
 	#如果占用率超过70%，则重启nodejs服务
 	if [ "$cpuRate" -gt "$maxCpuRate" ]
